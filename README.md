@@ -1,3 +1,30 @@
+🔧 This fork (maintained by Yuwei Liu) adds extended functionality for MSA manipulation and protein-design workflows
+
+This fork extends the original FrankenMSA project with additional features to support large-scale MSA processing, protein-design pipelines, and automated backend workflows.
+Key contributions include:
+
+• Advanced MSA manipulation tools
+– Column-wise shuffle module for robustness testing
+– Interactive MSA Builder enabling multimer assembly
+– Enhanced clustering workflow (AF-Cluster + Ward-linkage)
+
+• ProteinMPNN backend pipeline
+– Full multi-chain PDB parsing and heteromer support
+– Python-native Colab GPU runner for automated ProteinMPNN execution
+– Smart output parsing to split combined FASTA/A3M into chain-level files
+
+• MMseqs2 multimer pipeline integration
+– ColabFold API support with taxonomy-based pairing
+– Automatic metadata injection for AlphaFold compatibility (#lenA,lenB, query IDs)
+
+• Full-stack improvements
+– Frontend-backend interface for running design tasks through Colab
+– UI/UX optimizations and runtime stability improvements
+
+These additions were developed for research use at the Institute of Biochemistry and Molecular Medicine (University of Bern) to enable flexible experimentation with MSA perturbations and protein design models.
+
+
+
 ![](app/assets/frankenmsa_header.png)
 
 Protein structure models like AlphaFold rely on Multiple Sequence Alignments (MSAs) for their prediction. Research has shown that the prediction of these models can be affected by manipulating the input MSAs, resulting in different conformations for the same target. To this end, we developed FrankenMSA, a small package designed to facilitate the workflow of manipulating MSAs. 
