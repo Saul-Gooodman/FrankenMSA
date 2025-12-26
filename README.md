@@ -7,6 +7,8 @@ Key contributions include:
 – Column-wise shuffle module for robustness testing
 – Interactive MSA Builder enabling multimer assembly
 – Enhanced clustering workflow (AF-Cluster + Ward-linkage)
+– Regex-based sequence filtering for flexible motif and pattern selection
+
 
 • ProteinMPNN backend pipeline
 – Full multi-chain PDB parsing and heteromer support
